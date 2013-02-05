@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Dynamic Treemap</title>
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <script type="text/javascript" src="d3.v2.js"></script>
+  <link type="text/css" rel="stylesheet" href="treemap.css"/>
+  <link type="text/css" rel="stylesheet" href="button.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+
+  <script src="http://mbostock.github.com/d3/d3.v2.js?2.9.2"></script>
+ </head>
+ <body>
+    <div>
+    <h2>Tree Map</h2>
+    <b>According to Group, name the corresponding the tree map would be rendered either on param1 or param2</b>
+    </div>
+    <div>
+    <div style="width:20%;float:left;display:inline-block" >
+  <textarea id="input_data" name="input_data" rows="20" cols="25">
+Group,name,param1,param2
+Alpha,A,25,41
+Alpha,B,9,69
+Alpha,C,91,52
+Alpha,D,76,44
+Beta,E,77,26
+Beta,F,1,40
+Beta,G,94,84
+Beta,H,49,77
+Gamma,I,85,28
+Gamma,J,38,100
+Gamma,K,92,74
+Gamma,L,58,98
+Delta,M,99,54
+Delta,N,85,7
+Delta,O,70,1
+Delta,P,98,40
+  </textarea></br>
+  <button id="render" class="name"  >render</button><br/>
+  heading needs to be the same you can alter the other values and click render to generate output for new data in the similar format
+  </div>
+   <div id="chart" style="width:78%;float:right;display:inline-block">
+    <button id="param1" class="first active">param1</button>
+    <button id="param2" class="last">param2</button>
+    <div id="Wrappertreemap"></div>
+   </div>
+   </div>
+   <script type="text/javascript" src="treemap.js">
+   </script>
+
+  </body>
+</html>
