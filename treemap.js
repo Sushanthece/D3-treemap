@@ -40,7 +40,8 @@ var width = 720,
           .attr("id", "treemapcell")
           .style("background", function(d) { return d.values ? color(d.key) : 1; })
           .call(cell)
-          .text(function(d) { return d.values ? null : d.Group; });
+          .text(function(d) { return d.values ? null : d.name; });
+          
       
       d3.select("#param1").on("click", function() {
         div.selectAll("div")
