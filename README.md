@@ -12,4 +12,4 @@ The Corresponding treemap output is obtained,
 
 the data needs to be comma separated values , simalar to sample data formats 
 
-for clarifications :check here 
+for clarifications :http://sushanthece.github.io/D3-treemap/
