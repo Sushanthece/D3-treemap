@@ -1,4 +1,4 @@
-var width = 720,
+var width = 840,
     height = 450,
     color = d3.scale.category20b();
 

@@ -31,9 +31,11 @@
            </header>
         </div>
     <div>
-     
-    <div style="width:25%;float:left;display:inline-block" ><br/><br/>
-  <textarea id="input_data" name="input_data" rows="20" cols="25">
+      <!-- MAIN CONTENT -->
+     <div>
+          <section id="main_content" class="inner" >   
+            <div style="width:25%;float:left;display:inline-block" ><br/><br/>
+                  <textarea id="input_data" name="input_data" rows="20" cols="22">
 Group,name,param1,param2
 Alpha,A,25,41
 Alpha,B,9,69
@@ -51,18 +53,17 @@ Delta,M,99,54
 Delta,N,85,7
 Delta,O,70,1
 Delta,P,98,40
-  </textarea></br>
-  <button id="param1" class="first active">param1</button>
-  <button id="param2" class="last">param2</button>
-  <button id="render" class="name">render</button><br/>
+                  </textarea></br>
+                  <button id="param1" class="first active">param1</button>
+                  <button id="param2" class="last">param2</button>
+                  <button id="render" class="name">render</button><br/>
   
-  heading needs to be the same you can alter the other values and click render to generate output for new data in the similar format
-  </div>
-   <div id="chart" style="width:73%;float:right;display:inline-block">
-    <b>According to Group, name the corresponding the tree map would be rendered either on param1 or param2</b>
-
-    <div id="Wrappertreemap"></div>
-   </div>
+        heading needs to be the same you can alter the other values and click render to generate output for new data in the similar format
+         </div>
+         <div id="chart" style="width:73%;float:right;display:inline-block">
+            <b>According to Group, name the corresponding the tree map would be rendered either on param1 or param2</b>
+                <div id="Wrappertreemap"></div>
+         </div>
     </section>
     </div>
    <script type="text/javascript" src="treemap.js"></script>
